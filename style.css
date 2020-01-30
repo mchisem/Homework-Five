@@ -3,7 +3,6 @@
 }
 
 /*heading*/
-
 .jumbotron {
     text-align: center;
     border: 4px solid black;
@@ -14,7 +13,6 @@
 }
 
 /*scheduler*/
-
 .table {
     width: 100vw !important;
     height: 100vh !important;
@@ -49,13 +47,15 @@ th {
     color: white;
 }
 
+.words:hover {
+    border: 1px solid white;
+}
 
 /*clipboard*/
 .save {
     width: 15px !important;
     border: 1px solid white !important;
     padding: 25px !important;
-    
 }
 
 .btn {
@@ -65,4 +65,8 @@ th {
     margin-left: auto !important;
     margin-right: auto !important;
     display: block !important;
+}
+
+.btn:hover {
+    opacity: 0.5;
 }
