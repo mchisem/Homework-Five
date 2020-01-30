@@ -2,8 +2,7 @@
     box-sizing: border-box;
 }
 
-
-
+/*heading*/
 
 .jumbotron {
     text-align: center;
@@ -14,6 +13,8 @@
     margin-bottom: 60px !important;
 }
 
+/*scheduler*/
+
 .table {
     width: 100vw !important;
     height: 100vh !important;
@@ -23,3 +24,12 @@
     top: 0 !important;
     bottom: 0 !important;
 }
+
+/*the times*/
+th {
+    border: 1px solid white !important;
+    width: 15px !important;
+    text-align: center !important;
+    padding: 25px !important;
+}
+
