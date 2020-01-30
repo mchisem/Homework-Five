@@ -23,6 +23,8 @@
     margin-right: auto !important;
     top: 0 !important;
     bottom: 0 !important;
+    background-color: black !important;
+    
 }
 
 /*the times*/
@@ -33,3 +35,35 @@ th {
     padding: 25px !important;
 }
 
+/*the input space*/
+.event { 
+    border: 1px solid white !important;
+    width: 0px !important;
+}
+
+.words {
+    width: 700px !important;
+    padding: 20px !important;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+
+/*clipboard*/
+.save {
+    width: 15px !important;
+    border: 1px solid pink !important;
+    padding: 25px !important;
+    
+}
+
+.btn {
+    background-color: greenyellow !important;
+    padding: 15px !important;
+    object-position: center !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
