@@ -136,14 +136,24 @@
     
 <script>
     // need to make a function so that when you click the copyboard btn, you save your input in the local storage*/
-    $(".btn").on('click', function(){
-        console.log("hey");
+    
 
+    $(".btn").on('click', function(){
+    
         var words = $(".words").val();
-        localStorage.setItem('words'. words);
+        //localStorage.setItem('words', JSON.stringify(words));
+        //localStorage.getItem('words', JSON.parse(words));
         console.log(words);
 
+        
     })
+
+    //make sure sure the current date of the planner is accurate//
+        //localStorage.removeItem.$(".day");
+            //or 
+            //var day = $(".day")
+            //localStorage.removeItem(day);
+        //
 </script>
 </body>
 </html>
