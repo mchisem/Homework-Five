@@ -142,8 +142,9 @@
     
         var words = $(".words").val();
         localStorage.setItem('words', words);
-        localStorage.getItem('words', words);
-        //console.log(words);
+
+        localStorage.getItem(words);
+        console.log(words);
 
         
     })
