@@ -141,9 +141,9 @@
     $(".btn").on('click', function(){
     
         var words = $(".words").val();
-        //localStorage.setItem('words', JSON.stringify(words));
-        //localStorage.getItem('words', JSON.parse(words));
-        console.log(words);
+        localStorage.setItem('words', words);
+        localStorage.getItem('words', words);
+        //console.log(words);
 
         
     })
