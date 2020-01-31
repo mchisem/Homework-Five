@@ -51,6 +51,15 @@ th {
     border: 1px solid white;
 }
 
+/*present, future*/
+.event.present {
+    background-color: red ;
+}
+
+.event.future {
+    background-color: greenyellow;
+}
+
 /*clipboard*/
 .save {
     width: 15px !important;

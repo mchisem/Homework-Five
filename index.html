@@ -9,6 +9,8 @@
 </head>
 <link href="style.css" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="style.js"></script>
 <script src="Moment.js"></script>
 <body>
@@ -24,7 +26,7 @@
           <tr>
             <th scope="row">9am</th>
             <td class="event">
-                <input class="words"></input>
+                <input type="text" class="words"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -36,7 +38,7 @@
           <tr>
             <th scope="row">10am</th>
             <td class="event">
-                <input class="words"></input>
+                <input type="text" class="words"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -48,7 +50,7 @@
           <tr>
             <th scope="row">11am</th>
             <td class="event">
-                <input class="words"></input>
+                <input type="text" class="words"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -60,7 +62,7 @@
           <tr>
             <th scope="row">12am</th>
             <td class="event">
-                <input class="words"></input>
+                <input type="text" class="words"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -72,7 +74,7 @@
           <tr>
             <th scope="row">1pm</th>
             <td class="event">
-                <input class="words"></input>
+                <input type="text" class="words"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -84,7 +86,7 @@
           <tr>
             <th scope="row">2pm</th>
             <td class="event">
-                <input class="words"></input>
+                <input type="text" class="words"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -96,7 +98,7 @@
           <tr>
             <th scope="row">3pm</th>
             <td class="event">
-                <input class="words"></input>
+                <input type="text" class="words"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -108,7 +110,7 @@
           <tr>
             <th scope="row">4pm</th>
             <td class="event">
-                <input class="words"></input>
+                <input type="text" class="words"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -120,8 +122,7 @@
           <tr>
             <th scope="row">5pm</th>
             <td class="event">
-                <input class="words">
-            </input>
+                <input type="text" class="words"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -132,6 +133,17 @@
           </tr>
         </tbody>
       </table>
-      
+    
+<script>
+    // need to make a function so that when you click the copyboard btn, you save your input in the local storage*/
+    $(".btn").on('click', function(){
+        console.log("hey");
+
+        var words = $(".words").val();
+        localStorage.setItem('words'. words);
+        console.log(words);
+
+    })
+</script>
 </body>
 </html>
