@@ -1,2 +1,2 @@
-var time
-var date
+ // current date
+ $('.day').text(moment().format("dddd, MMM Do, YYYY")); 

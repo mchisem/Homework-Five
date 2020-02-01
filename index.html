@@ -16,8 +16,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-<script src="style.js"></script>
-<script src="Moment.js"></script>
 <body>
     <div class="jumbotron">
         <h1 class="display-4">Work Day Planner!</h1>
@@ -138,11 +136,10 @@
           </tr>
         </tbody>
       </table>
-    
-<script>
-    // current date
-    $('.day').text(moment().format("dddd, MMM Do, YYYY")); 
 
+<script src="style.js"></script>
+<script src="Moment.js"></script>
+<script>
 
     // need to make a function so that when you click the copyboard btn, you save your input in the local storage*
     $(".btn").on('click', function(){
