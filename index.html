@@ -13,6 +13,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
 <script src="style.js"></script>
 <script src="Moment.js"></script>
@@ -21,7 +23,7 @@
         <h1 class="display-4">Work Day Planner!</h1>
         <p class="lead">A simple scheduler designed to help manage your daily work events.</p>
         <hr class="my-4">
-        <input type="date" class="day"></input>
+        <div type="text"class="day"></div>
     </div>
 
       <table class="table table-bordered table-dark">
@@ -138,16 +140,8 @@
       </table>
     
 <script>
-    //get current date
-    //Date currentDate = new Date();
-
-//      $(".day").dateFormat({
-  //        dateFormat: 'E, MM, ss, yyyy',
-  //        changeMonth: true,
-   //       changeYear: true
-
-  //    }).dateFormat('setDate', '0');
-
+    // current date
+    $('.day').text(moment().format("dddd, MMM Do, YYYY")); 
 
 
     // need to make a function so that when you click the copyboard btn, you save your input in the local storage*
