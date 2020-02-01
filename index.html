@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 <script src="style.js"></script>
 <script src="Moment.js"></script>
 <body>
@@ -18,7 +21,7 @@
         <h1 class="display-4">Work Day Planner!</h1>
         <p class="lead">A simple scheduler designed to help manage your daily work events.</p>
         <hr class="my-4">
-        <p class="day">Monday, Febuary 24, 2020</p>
+        <input type="date" class="day"></input>
     </div>
 
       <table class="table table-bordered table-dark">
@@ -135,19 +138,38 @@
       </table>
     
 <script>
-    // need to make a function so that when you click the copyboard btn, you save your input in the local storage*/
-    
+    //get current date
+    //Date currentDate = new Date();
 
+//      $(".day").dateFormat({
+  //        dateFormat: 'E, MM, ss, yyyy',
+  //        changeMonth: true,
+   //       changeYear: true
+
+  //    }).dateFormat('setDate', '0');
+
+
+
+    // need to make a function so that when you click the copyboard btn, you save your input in the local storage*
     $(".btn").on('click', function(){
     
         var words = $(".words").val();
         localStorage.setItem('words', words);
 
-        localStorage.getItem(words);
-        console.log(words);
+        //localStorage.getItem(words);
+        //console.log(words);
 
-        
+        //console.log(localStorage.getItem('words'));
+
+        var task = $(".words").text();
+        localStorage.getItem(task);
+
     })
+
+    
+//change to current date
+  //for(var i = 0; i < questions[0].choices.length; i++) {
+     //   $(".day").innerHTML += ; }
 
     //make sure sure the current date of the planner is accurate//
         //localStorage.removeItem.$(".day");
