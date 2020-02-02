@@ -5,46 +5,46 @@
  // need to make a function so that when you click the copyboard btn, you save your input in the local storage*
  $(".btn").on('click', function(){
     
-    var words = $("#9am").val();
-    localStorage.setItem('9am', words);
+    var words = $("#9").val();
+    localStorage.setItem('9', words);
 
-    var words2 = $("#10am").val();
-    localStorage.setItem('10am', words2);
+    var words2 = $("#10").val();
+    localStorage.setItem('10', words2);
 
-    var words3 = $("#11am").val();
-    localStorage.setItem('11am', words3);
+    var words3 = $("#11").val();
+    localStorage.setItem('11', words3);
 
-    var words4 = $("#12pm").val();
-    localStorage.setItem('12pm', words4);
+    var words4 = $("#12").val();
+    localStorage.setItem('12', words4);
 
-    var words5 = $("#1pm").val();
-    localStorage.setItem('1pm', words5);
+    var words5 = $("#1").val();
+    localStorage.setItem('1', words5);
 
-    var words6 = $("#2pm").val();
-    localStorage.setItem('2pm', words6);
+    var words6 = $("#2").val();
+    localStorage.setItem('2', words6);
 
-    var words7 = $("#3pm").val();
-    localStorage.setItem('3pm', words7);
+    var words7 = $("#3").val();
+    localStorage.setItem('3', words7);
 
-    var words8 = $("#4pm").val();
-    localStorage.setItem('4pm', words8);
+    var words8 = $("#4").val();
+    localStorage.setItem('4', words8);
 
-    var words9 = $("#5pm").val();
-    localStorage.setItem('5pm', words9);
+    var words9 = $("#5").val();
+    localStorage.setItem('5', words9);
 
 })
 
  function init() {
      //console.log(localStorage.getItem("words"))
-       $("#9am").val(localStorage.getItem('9am')); 
-       $("#10am").val(localStorage.getItem('10am'));
-       $("#11am").val(localStorage.getItem('11am'));
-       $("#12pm").val(localStorage.getItem('12pm'));
-       $("#1pm").val(localStorage.getItem('1pm'));
-       $("#2pm").val(localStorage.getItem('2pm'));
-       $("#3pm").val(localStorage.getItem('3pm'));
-       $("#4pm").val(localStorage.getItem('4pm'));
-       $("#5pm").val(localStorage.getItem('5pm'));
+       $("#9").val(localStorage.getItem('9')); 
+       $("#10").val(localStorage.getItem('10'));
+       $("#11").val(localStorage.getItem('11'));
+       $("#12").val(localStorage.getItem('12'));
+       $("#1").val(localStorage.getItem('1'));
+       $("#2").val(localStorage.getItem('2'));
+       $("#3").val(localStorage.getItem('3'));
+       $("#4").val(localStorage.getItem('4'));
+       $("#5").val(localStorage.getItem('5'));
     }
 
     init();
@@ -58,3 +58,21 @@
 
 
 // change the color of the text section in relation to the time. 
+//var currentEvent = $('#text');
+//var currentTime = 0
+//var time = $('#nineAM');
+
+//for(var i = 0; i < 24; i++) {
+  //  if(currentTime == i){
+ //   currentEvent.addClass('.present');
+//}
+//}
+
+//function colorChange() {
+    //currentEvent.classList.add('present')};
+
+String = [1,2,3,4,5,8,9,10,11,12];
+
+function colorChange() {
+
+}
