@@ -52,12 +52,12 @@ th {
 }
 
 /*present, future*/
-.event.present {
-    background-color: red ;
+.present {
+    background-color: gold ;
 }
 
-.event.future {
-    background-color: greenyellow;
+.future {
+    background-color: purple;
 }
 
 /*clipboard*/

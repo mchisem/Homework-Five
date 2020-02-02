@@ -29,7 +29,7 @@
           <tr>
             <th scope="row">9am</th>
             <td class="event">
-                <input type="text" class="words"></input>
+                <input type="text" class="words" id="9am"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -41,7 +41,7 @@
           <tr>
             <th scope="row">10am</th>
             <td class="event">
-                <input type="text" class="words"></input>
+                <input type="text" class="words" id="10am"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -53,7 +53,7 @@
           <tr>
             <th scope="row">11am</th>
             <td class="event">
-                <input type="text" class="words"></input>
+                <input type="text" class="words" id="11am"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -63,9 +63,9 @@
             </td>
           </tr>
           <tr>
-            <th scope="row">12am</th>
+            <th scope="row">12pm</th>
             <td class="event">
-                <input type="text" class="words"></input>
+                <input type="text" class="words" id="12pm"></input>
             </td>
             <td class="save">
                 <button class="btn" id="clipboard">
@@ -140,33 +140,6 @@
 <script src="style.js"></script>
 <script>
 
-    // need to make a function so that when you click the copyboard btn, you save your input in the local storage*
-    $(".btn").on('click', function(){
-    
-        var words = $(".words").val();
-        localStorage.setItem('words', words);
-
-        //localStorage.getItem(words);
-        //console.log(words);
-
-        //console.log(localStorage.getItem('words'));
-
-        var task = $(".words").text();
-        localStorage.getItem(task);
-
-    })
-
-    
-//change to current date
-  //for(var i = 0; i < questions[0].choices.length; i++) {
-     //   $(".day").innerHTML += ; }
-
-    //make sure sure the current date of the planner is accurate//
-        //localStorage.removeItem.$(".day");
-            //or 
-            //var day = $(".day")
-            //localStorage.removeItem(day);
-        //
 </script>
 </body>
 </html>
