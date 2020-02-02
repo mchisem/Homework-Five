@@ -17,20 +17,20 @@
     var words4 = $("#12").val();
     localStorage.setItem('12', words4);
 
-    var words5 = $("#1").val();
-    localStorage.setItem('1', words5);
+    var words5 = $("#13").val();
+    localStorage.setItem('13', words5);
 
-    var words6 = $("#2").val();
-    localStorage.setItem('2', words6);
+    var words6 = $("#14").val();
+    localStorage.setItem('14', words6);
 
-    var words7 = $("#3").val();
-    localStorage.setItem('3', words7);
+    var words7 = $("#15").val();
+    localStorage.setItem('15', words7);
 
-    var words8 = $("#4").val();
-    localStorage.setItem('4', words8);
+    var words8 = $("#16").val();
+    localStorage.setItem('16', words8);
 
-    var words9 = $("#5").val();
-    localStorage.setItem('5', words9);
+    var words9 = $("#17").val();
+    localStorage.setItem('17', words9);
 
 })
 
@@ -40,11 +40,11 @@
        $("#10").val(localStorage.getItem('10'));
        $("#11").val(localStorage.getItem('11'));
        $("#12").val(localStorage.getItem('12'));
-       $("#1").val(localStorage.getItem('1'));
-       $("#2").val(localStorage.getItem('2'));
-       $("#3").val(localStorage.getItem('3'));
-       $("#4").val(localStorage.getItem('4'));
-       $("#5").val(localStorage.getItem('5'));
+       $("#13").val(localStorage.getItem('13'));
+       $("#14").val(localStorage.getItem('14'));
+       $("#15").val(localStorage.getItem('15'));
+       $("#16").val(localStorage.getItem('16'));
+       $("#17").val(localStorage.getItem('17'));
     }
 
     init();
@@ -58,21 +58,20 @@
 
 
 // change the color of the text section in relation to the time. 
-//var currentEvent = $('#text');
-//var currentTime = 0
-//var time = $('#nineAM');
+function colorChange(){
 
-//for(var i = 0; i < 24; i++) {
-  //  if(currentTime == i){
- //   currentEvent.addClass('.present');
-//}
-//}
+    String = [9,10,11,12,13,14,15,16,17];
+    var hour = moment().hour();
 
-//function colorChange() {
-    //currentEvent.classList.add('present')};
+    for(var i = 0; i <= String.length; i++) {
 
-String = [1,2,3,4,5,8,9,10,11,12];
-
-function colorChange() {
-
-}
+        if(hour <= String.length){
+            $('.event').css({"background-color": "red"});
+            $('.words').css({"background-color":"red"});
+        } else if(hour >= String.length){
+            $('.event').css({"background-color": "blue"});
+            $('.words').css({"background-color":"blue"});
+        } 
+       
+    }console.log(String.length);
+} colorChange ();
