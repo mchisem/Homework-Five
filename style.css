@@ -2,14 +2,23 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: linear-gradient(120deg, #fbc531, #330033);
+}
+
 /*heading*/
 .jumbotron {
     text-align: center;
     border: 4px solid black;
     box-shadow: 4px 4px 14px 14px black;
     border-radius: 0 !important;
-    background-color: white !important;
+    color: white !important;
     margin-bottom: 60px !important;
+    background-color: #330033 !important;
+}
+
+hr {
+    background-color: white !important;
 }
 
 /*scheduler*/
@@ -30,7 +39,7 @@ th {
     border: 1px solid white !important;
     width: 15px !important;
     text-align: center !important;
-    padding: 25px !important;
+    padding: 35px !important;
 }
 
 /*the input space*/
