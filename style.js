@@ -61,10 +61,11 @@
 function colorChange(){
 
     String = [9,10,11,12,13,14,15,16,17];
-    var hour = moment().hour();
 
     for(var i = 0; i <= String.length; i++) {
 
+        var hour = moment().hour();
+        
         if(hour <= String.length){
             $('.event').css({"background-color": "red"});
             $('.words').css({"background-color":"red"});
