@@ -66,13 +66,21 @@ function colorChange(){
 
         var hour = moment().hour();
         
-        if(hour <= String.length){
-            $('.event').css({"background-color": "red"});
-            $('.words').css({"background-color":"red"});
-        } else if(hour >= String.length){
-            $('.event').css({"background-color": "blue"});
-            $('.words').css({"background-color":"blue"});
+        if(hour <= String[i]){
+            console.log(hour <= String[i])
+            $('#' + String[i]+"").css({"background-image": "linear-gradient(60deg, #f8b400, #ffcc00)"});
+    
+        } else if(hour >= String[i]){
+            console.log(hour);
+            $('#' + String[i]+"").css({"background-image": "linear-gradient(60deg, #330033, purple)"});
+            // $('.words').css({"background-color":"#330033"});
+            //"background-image": "linear-gradient(60deg, #fbc531, gold)"
+            //"background-image": "linear-gradient(60deg, #330033, purple)"
+            //$('#' + String[i]+"").css({"background-image": "linear-gradient(60deg, #f8b400, #ffcc00)"});
         } 
        
-    }console.log(String.length);
+    }//console.log(String.length);
 } colorChange ();
+
+
+
