@@ -2,15 +2,33 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("clipboard/pinkdesk.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+}
+
 /*heading*/
 .jumbotron {
     text-align: center;
-    border: 4px solid black;
+    /* border: 4px solid black;
     box-shadow: 4px 4px 14px 14px black;
-    border-radius: 0 !important;
-    background-color: white !important;
-    margin-bottom: 60px !important;
-    color: black !important;
+    border-radius: 0 !important; */
+    border: none !important;
+    background: none !important;
+    /* background-image: url("clipboard/artbackground.jpg") !important; */
+    margin-bottom: 10px !important;
+    color: white !important;
+}
+
+.display-4,
+.day {
+    font-weight: bolder !important;
+}
+
+.day {
+    font-size: 25px !important;
+    margin-bottom: -5px;
 }
 
 hr {
@@ -21,7 +39,7 @@ hr {
 .table {
     width: 100vw !important;
     height: 100vh !important;
-    max-width: 900px !important;
+    max-width: 1000px !important;
     margin-left: auto !important;
     margin-right: auto !important;
     top: 0 !important;
@@ -52,7 +70,7 @@ th {
 }
 
 .words {
-    width: 700px !important;
+    width: 755px !important;
     padding: 20px !important;
     background-color: black;
     border: none;

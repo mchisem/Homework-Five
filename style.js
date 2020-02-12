@@ -68,16 +68,18 @@ function colorChange(){
         
         if(hour <= String[i]){
             console.log(hour <= String[i])
-            $('#' + String[i]+"").css({"background-image": "linear-gradient(60deg, #f8b400, #ffcc00)"});
+            $('#' + String[i]).css({"background-image": "linear-gradient(white, gray)","color":"black"});
     
         } else if(hour >= String[i]){
             console.log(hour);
-            $('#' + String[i]+"").css({"background-image": "linear-gradient(60deg, #330033, purple)"});
+            $('#' + String[i]).css({"background-color": "black"});
             // $('.words').css({"background-color":"#330033"});
             //"background-image": "linear-gradient(60deg, #fbc531, gold)"
             //"background-image": "linear-gradient(60deg, #330033, purple)"
             //$('#' + String[i]+"").css({"background-image": "linear-gradient(60deg, #f8b400, #ffcc00)"});
-        } 
+        } else if(hour == String[i]){
+            $('#' + String[i]).css({"background-image": "linear-gradient(skyblue, cornflowerblue)"});
+        }
        
     }//console.log(String.length);
 } colorChange ();
