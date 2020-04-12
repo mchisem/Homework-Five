@@ -24,6 +24,10 @@
     color: white !important;
 }
 
+hr {
+    background-color: white !important;
+}
+
 .display-4,
 .day {
     font-weight: bolder !important;
@@ -34,8 +38,9 @@
     margin-bottom: -5px;
 }
 
-hr {
-    background-color: white !important;
+.time {
+    color: white;
+    font-size: 20px;
 }
 
 /*scheduler*/

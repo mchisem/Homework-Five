@@ -1,5 +1,11 @@
- // current date displayed
- $('.day').text(moment().format("dddd, MMM Do, YYYY")); 
+ // current date/time displayed
+function date (){
+    $('.day').text(moment().format("dddd, MMM Do, YYYY")); 
+    $('.time').text(moment().format("h:mm a")); 
+    setInterval(date, 1000);
+}
+
+date();
  
  // need to make a function so that when you click the copyboard btn, you save your input in the local storage*
  $(".btn").on('click', function(){
@@ -65,20 +71,20 @@ function colorChange(){
 
         var hour = moment().hour();
         
-        if(hour <= String[i]){
+        if(hour <= String[i]-1){
             // console.log(hour <= String[i])
             $('#' + String[i]).css({"background-image": "linear-gradient(white, gray)","color":"black"});
     
-        } else if(hour >= String[i]){
+        } else if(hour >= String[i]+1){
             // console.log(hour);
             $('#' + String[i]).css({"background-color": "black"});
 
-        } else if(hour === String[i]){
-            console.log(hour === String);
+        } else if (hour) {
             $('#' + String[i]).css({"background-image": "linear-gradient(skyblue, cornflowerblue)"});
         }
        
     }//console.log(String.length);
+ 
 } colorChange ();
 
 
