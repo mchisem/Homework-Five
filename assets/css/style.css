@@ -1,22 +1,25 @@
 * {
     box-sizing: border-box;
+    left: 0;
+    margin: 0;
 }
 
-body {
-    background-image: url("clipboard/pinkdesk.jpg");
-    background-size: contain;
-    background-attachment: fixed;
+/* background */
+#background {
+    width: 100%;
+    height: 145vh;
+    object-fit: cover;
 }
 
 /*heading*/
 .jumbotron {
     text-align: center;
-    /* border: 4px solid black;
-    box-shadow: 4px 4px 14px 14px black;
-    border-radius: 0 !important; */
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    width: 100%;
     border: none !important;
     background: none !important;
-    /* background-image: url("clipboard/artbackground.jpg") !important; */
     margin-bottom: 10px !important;
     color: white !important;
 }
@@ -37,14 +40,15 @@ hr {
 
 /*scheduler*/
 .table {
-    width: 100vw !important;
-    height: 100vh !important;
+    width: 100% !important;
+    height: 100% !important;
     max-width: 1000px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    top: 0 !important;
-    bottom: 0 !important;
+    /* margin-left: auto !important;
+    margin-right: auto !important; */
+    left: 16.5%;
+    top: 35% !important;
     background-color: black !important;
+    position: absolute;
     
 }
 
